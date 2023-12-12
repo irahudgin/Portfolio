@@ -1,0 +1,29 @@
+{
+    "name": "transactional-web-assignment-irahudgin",
+    "version": "1.0.0",
+    "description": "This template repository is the starter project for Transactional Web App. assignment. Written in HTML/CSS/JavaScript/React.js/Node.js/Express.js.",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/adinashby-vanier-college/transactional-web-assignment-irahudgin.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/adinashby-vanier-college/transactional-web-assignment-irahudgin/issues"
+    },
+    "homepage": "https://github.com/adinashby-vanier-college/transactional-web-assignment-irahudgin#readme",
+    "dependencies": {
+        "axios": "^1.6.1",
+        "dotenv": "^16.3.1",
+        "ejs": "^3.1.9",
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
+}
