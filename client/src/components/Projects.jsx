@@ -12,7 +12,7 @@ function Projects() {
                 "https://api.github.com/users/irahudgin/repos"
             );
             const data = await res.json();
-            const indices = [0, 5, 18];
+            const indices = [0, 5, 19];
             const selectedProjects = indices.map((ind) => data[ind]);
             setProject(selectedProjects);
         }
