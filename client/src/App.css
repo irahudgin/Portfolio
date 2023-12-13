@@ -776,6 +776,7 @@ textarea {
     box-sizing: border-box;
     /* Match form field borders */
     border: 1px solid #999;
+    background-color: rgb(57, 57, 57);
 }
 
 input:focus,
