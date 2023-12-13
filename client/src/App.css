@@ -242,6 +242,7 @@ hr {
     padding: 0 1.5rem;
     display: flex;
     height: 70vh;
+    min-height: 500px;
     width: 100%;
 }
 
@@ -636,6 +637,7 @@ span {
     background-color: black;
     padding: 0 1.5rem;
     height: 90vh;
+    min-height: 655px;
     overflow: hidden;
 }
 

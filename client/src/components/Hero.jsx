@@ -39,7 +39,7 @@ function Hero() {
                             >
                                 <img src="./images/LinkedIn-Logos/LI-In-Bug.png" />
                             </a>
-                            <a href="/ira_resume.pdf" target="_blank">
+                            <a href="./ira_resume.pdf" target="_blank">
                                 <img src="./images/CV.png" />
                             </a>
                             <a
