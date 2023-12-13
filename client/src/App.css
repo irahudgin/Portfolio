@@ -678,7 +678,7 @@ span {
 .myForm {
     background-color: black;
     flex: 2;
-    height: 90%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -778,29 +778,26 @@ textarea {
 
 input:focus,
 textarea:focus {
-    /* Additional highlight for focused elements */
     border-color: #000;
 }
 
 textarea {
-    /* Align multiline text fields with their labels */
     vertical-align: top;
-    /* Provide space to type some text */
     height: 10em;
 }
 
 .button {
-    /* Align buttons with the text fields */
-    padding-left: 90px; /* same size as the label elements */
     background-color: white;
     color: black;
     box-shadow: 5px 5px 0px 0px rgb(126, 191, 160);
+    position: relative;
 }
 
-button {
-    /* This extra margin represent roughly the same space as the space
-     between the labels and their text fields */
-    margin-left: 0.5em;
+.button:hover {
+    bottom: 2%;
+    background-color: rgb(126, 191, 160);
+    color: white;
+    box-shadow: 5px 5px 0px 0px rgb(126, 191, 160, 0.446);
 }
 
 #msg {
@@ -980,5 +977,23 @@ button {
 
     .myPicture {
         display: none;
+    }
+
+    .myForm {
+        gap: 5vh;
+    }
+
+    .contactTitleBox h1 {
+        font-size: 2em;
+    }
+
+    @media screen and (max-width: 420px) {
+        .irahudgin h1 {
+            font-size: 2em;
+        }
+
+        .about p {
+            font-size: 0.88em !important;
+        }
     }
 }

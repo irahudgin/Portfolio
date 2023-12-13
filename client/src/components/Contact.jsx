@@ -1,6 +1,36 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs
+            .sendForm(
+                "service_lop6snk",
+                "template_7coplgs",
+                form.current,
+                "MpXKdXVUP_-XaFBt-"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    setEmail("");
+                    setMessage("");
+                    alert(
+                        "I got your email, thanks for reaching out to me. I'll get back to you soon"
+                    );
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+    };
+
     return (
         <div className="contactMain">
             <div className="contactTop">
@@ -17,19 +47,27 @@ function Contact() {
                         <h1>Send me a message!</h1>
                     </div>
                     <div className="formContainer">
-                        <form action="/" method="post">
+                        <form ref={form} onSubmit={sendEmail}>
                             <ul>
                                 <li>
-                                    <label htmlFor="mail">Email:</label>
+                                    <label>Email:</label>
                                     <input
+                                        value={email}
+                                        onChange={(e) => {
+                                            setEmail(e.target.value);
+                                        }}
                                         type="email"
                                         id="mail"
                                         name="user_email"
                                     />
                                 </li>
                                 <li>
-                                    <label htmlFor="msg">Message:</label>
+                                    <label>Message:</label>
                                     <textarea
+                                        value={message}
+                                        onChange={(e) => {
+                                            setMessage(e.target.value);
+                                        }}
                                         id="msg"
                                         name="user_message"
                                     ></textarea>

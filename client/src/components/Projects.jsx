@@ -30,9 +30,7 @@ function Projects() {
     });
 
     let loaded = false;
-    project.length > 0
-        ? ((loaded = true), console.log(project))
-        : (loaded = false);
+    project.length > 0 ? (loaded = true) : (loaded = false);
     return (
         <div className="projectMain">
             <div className="gridContainer">

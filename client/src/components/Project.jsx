@@ -1,7 +1,6 @@
 import React from "react";
 
 function Project(props) {
-    console.log(props);
     const topics = props.data.topics.map((topic) => {
         return <span>{topic}</span>;
     });
