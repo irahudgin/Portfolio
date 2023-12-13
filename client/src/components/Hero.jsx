@@ -31,22 +31,22 @@ function Hero() {
                                 href="https://github.com/irahudgin"
                                 target="_blank"
                             >
-                                <img src="/images/github-mark/github-mark-white.png" />
+                                <img src="./images/github-mark/github-mark-white.png" />
                             </a>
                             <a
                                 href="https://www.linkedin.com/in/ira-hudgin/"
                                 target="_blank"
                             >
-                                <img src="/images/LinkedIn-Logos/LI-In-Bug.png" />
+                                <img src="./images/LinkedIn-Logos/LI-In-Bug.png" />
                             </a>
                             <a href="/ira_resume.pdf" target="_blank">
-                                <img src="/images/CV.png" />
+                                <img src="./images/CV.png" />
                             </a>
                             <a
                                 href="https://www.instagram.com/irahudgin/"
                                 target="_blank"
                             >
-                                <img src="/images/instagramIcon.png" />
+                                <img src="./images/instagramIcon.png" />
                             </a>
                         </div>
                     </div>
