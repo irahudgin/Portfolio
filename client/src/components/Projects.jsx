@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import projects from "../data";
 import Project from "./Project";
 
-function Projects() {
+function Projects(props) {
     const [project, setProject] = useState([]);
 
     useEffect(() => {
@@ -12,7 +12,7 @@ function Projects() {
                 "https://api.github.com/users/irahudgin/repos"
             );
             const data = await res.json();
-            const indices = [0, 5, 19];
+            const indices = [0, 5, 15];
             const selectedProjects = indices.map((ind) => data[ind]);
             setProject(selectedProjects);
         }
@@ -35,7 +35,7 @@ function Projects() {
         <div className="projectMain">
             <div className="gridContainer">
                 <div className="testbox">
-                    <h2>Projects &#8623;</h2>
+                    <h2>{props.lang.projects.title} &#8623;</h2>
                 </div>
                 <div className="projectBackground1"></div>
                 <div className="projectBackground2"></div>

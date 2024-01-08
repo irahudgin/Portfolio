@@ -1,6 +1,6 @@
 import React from "react";
 
-function Skills() {
+function Skills(props) {
     return (
         <div className="projectMain skillsMain">
             <div className="gridContainer skillsContainer">
@@ -52,7 +52,9 @@ function Skills() {
                     </div>
                 </div>
                 <div className="skillsBox sk4">
-                    <h2 className="skillsSubtitle">Skills &#8623;</h2>
+                    <h2 className="skillsSubtitle">
+                        {props.lang.skills.title} &#8623;
+                    </h2>
                 </div>
                 <div
                     className="gridContainerBox"

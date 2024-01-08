@@ -1,21 +1,20 @@
 import React from "react";
 
-function Hero() {
+function Hero(props) {
     return (
         <div className="heroContainer">
             <div>
                 <div className="topBar">
                     <div className="topBarComponent">
-                        <p className="heroP">Full Stack Developer</p>
+                        <p className="heroP">{props.lang.hero.title}</p>
                     </div>
                     <div className="topBarComponent"></div>
                     <div className="topBarComponent">
-                        <p className="heroP coords">Quebec City</p>
+                        <p className="heroP coords">
+                            {props.lang.hero.location}
+                        </p>
                     </div>
-                    <div className="topBarComponent right">
-                        <a className="heroP coords lang">English</a>
-                        <a className="heroP coords lang">French</a>
-                    </div>
+                    <div className="topBarComponent right"></div>
                 </div>
                 <div className="nameAndOthers">
                     <div className="font-face-nm box irahudgin">
@@ -61,19 +60,10 @@ function Hero() {
             </div>
             <div className="about">
                 <div className="aboutWrapper">
-                    <p>
-                        Hi, I'm Ira. I'm a full stack developer based in Quebec
-                        City. Currently I am focused on building up my personal
-                        projects, completing my education in the software
-                        development program at Vanier College, and searching for
-                        employment opportunities.
-                    </p>
+                    <p>{props.lang.hero.about1}</p>
                     <hr></hr>
                     <br></br>
-                    <p>
-                        I love design, photography, coding, fitness, guitar,
-                        mountain biking, and snowboarding.
-                    </p>
+                    <p>{props.lang.hero.about2}</p>
                     <div className="topBar bottomBar">
                         <div className="topBarComponent"></div>
                         <div className="topBarComponent"></div>

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-function Contact() {
+function Contact(props) {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
@@ -44,13 +44,13 @@ function Contact() {
             <div className="formAndPicture">
                 <div className="myForm">
                     <div className="contactTitleBox">
-                        <h1>Send me a message!</h1>
+                        <h1>{props.lang.contact.title}</h1>
                     </div>
                     <div className="formContainer">
                         <form ref={form} onSubmit={sendEmail}>
                             <ul>
                                 <li>
-                                    <label>Email:</label>
+                                    <label>{props.lang.contact.email}:</label>
                                     <input
                                         value={email}
                                         onChange={(e) => {
@@ -62,7 +62,7 @@ function Contact() {
                                     />
                                 </li>
                                 <li>
-                                    <label>Message:</label>
+                                    <label>{props.lang.contact.message}:</label>
                                     <textarea
                                         value={message}
                                         onChange={(e) => {
@@ -74,7 +74,7 @@ function Contact() {
                                 </li>
                                 <li className="button">
                                     <button type="submit">
-                                        Send your message
+                                        {props.lang.contact.submit}
                                     </button>
                                 </li>
                             </ul>
