@@ -47,8 +47,8 @@ function Main() {
                     French
                 </a>
             </div>
-            <Hero lang={data} />
-            <Projects lang={data} />
+            <Hero lang={data} language={language} />
+            <Projects lang={data} language={language} />
             <Skills lang={data} />
             <Contact lang={data} />
         </div>

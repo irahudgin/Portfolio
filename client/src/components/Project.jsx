@@ -6,7 +6,7 @@ function Project(props) {
     });
     return (
         <div className={"projectTest" + props.projectNumber}>
-            <a href={props.data.html_url} target="_blank" className="project1">
+            <a href={props.data.link} target="_blank" className="project1">
                 <div className="projectHeader">
                     <div className="projectNumber">
                         <p>0{props.projectNumber}</p>
