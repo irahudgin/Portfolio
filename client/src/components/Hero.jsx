@@ -39,11 +39,11 @@ function Hero(props) {
                                 <img src="./images/LinkedIn-Logos/LI-In-Bug.png" />
                             </a>
                             {props.language == "English" ? (
-                                <a href="/ira-resume.pdf" target="_blank">
+                                <a href="./ira-resume.pdf" target="_blank">
                                     <img src="./images/CV.png" />
                                 </a>
                             ) : (
-                                <a href="/ira-resume-fr.pdf" target="_blank">
+                                <a href="./ira-resume-fr.pdf" target="_blank">
                                     <img src="./images/CV.png" />
                                 </a>
                             )}
