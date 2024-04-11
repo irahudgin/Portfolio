@@ -3,13 +3,13 @@ const projects = [
         English: [
             {
                 id: 1,
-                link: "",
-                name: "Resurgence",
-                topics: ["WordPress"],
+                link: "https://soundsqueezr.com",
+                name: "Soundsqueezr",
+                topics: ["Javascript", "FFmpeg WASM", "AWS"],
                 description:
-                    "A WordPress website for a local gym owner and personal trainer",
+                    "Web app for audio balancing to enhance movie dialogue clarity",
                 image: "/images/resurgence.png",
-                status: "Finalizing",
+                status: "Deployed",
             },
             {
                 id: 2,
@@ -44,13 +44,13 @@ const projects = [
         French: [
             {
                 id: 1,
-                link: "",
-                name: "Resurgence",
-                topics: ["WordPress"],
+                link: "https://soundsqueezr.com",
+                name: "Soundsqueezr",
+                topics: ["Javascript", "FFmpeg WASM", "AWS"],
                 description:
-                    "Un site WordPress pour un propriétaire de salle de sport local et un coach personnel",
+                    "Application web pour l'équilibrage audio afin d'améliorer la clarté des dialogues de films",
                 image: "/images/resurgence.png",
-                status: "Finalizing",
+                status: "Déployé",
             },
             {
                 id: 2,
